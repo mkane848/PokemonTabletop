@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kemix.adventurerlog.PickStats">
+
+    <EditText
+        android:id = "@+id/trainer_str"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_hint"
+        android:inputType="number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id = "@+id/trainer_dex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dex_hint"
+        android:inputType="number"
+        android:layout_below="@+id/trainer_str"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id = "@+id/trainer_con"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/con_hint"
+        android:inputType="number"
+        android:layout_below="@+id/trainer_dex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id = "@+id/trainer_int"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/int_hint"
+        android:inputType="number"
+        android:layout_below="@+id/trainer_con"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id = "@+id/trainer_wis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/wis_hint"
+        android:inputType="number"
+        android:layout_below="@+id/trainer_int"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id = "@+id/trainer_cha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cha_hint"
+        android:inputType="number"
+        android:layout_below="@+id/trainer_wis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text = "@string/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendInfo"
+        android:layout_below="@+id/trainer_cha"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

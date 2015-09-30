@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kemix.adventurerlog" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateCharacter"
+            android:label="@string/title_activity_create_character"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kemix.adventurerlog.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LoadCharacter"
+            android:label="@string/title_activity_load_character"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kemix.adventurerlog.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PickStats"
+            android:label="@string/title_activity_pick_stats"
+            android:parentActivityName=".CreateCharacter" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kemix.adventurerlog.CreateCharacter" />
+        </activity>
+        <activity
+            android:name=".SelectFeats"
+            android:label="@string/title_activity_select_feats"
+            android:parentActivityName=".PickStats" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kemix.adventurerlog.PickStats" />
+        </activity>
+        <activity
+            android:name=".MainSheet"
+            android:label="@string/title_activity_main_sheet"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kemix.adventurerlog.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TrainerClassMenu"
+            android:label="@string/title_activity_trainer_class_menu" >
+        </activity>
+    </application>
+
+</manifest>

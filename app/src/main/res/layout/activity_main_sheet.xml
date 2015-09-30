@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kemix.adventurerlog.MainSheet">
+
+    <TextView
+        android:text="@string/name_hint"
+        android:id="@+id/characterName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/str_hint"
+        android:id="@+id/characterStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/dex_hint"
+        android:id="@+id/characterDex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterStr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/con_hint"
+        android:id="@+id/characterCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterDex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/int_hint"
+        android:id="@+id/characterInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterCon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/wis_hint"
+        android:id="@+id/characterWis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterInt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/cha_hint"
+        android:id="@+id/characterCha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterWis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <TextView
+        android:text="@string/maxhp_hint"
+        android:id="@+id/characterMaxHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/characterName"
+        android:layout_alignEnd="@+id/characterName" />
+
+    <TextView
+        android:text="@string/currenthp_hint"
+        android:id="@+id/characterCurrentHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/money_hint"
+        android:id="@+id/characterMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterSeen"
+        android:layout_alignRight="@+id/characterCaught"
+        android:layout_alignEnd="@+id/characterCaught" />
+
+    <TextView
+        android:text="@string/seen_hint"
+        android:id="@+id/characterSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/characterCaught"
+        android:layout_toLeftOf="@+id/characterCaught"
+        android:layout_toStartOf="@+id/characterCaught" />
+
+    <TextView
+        android:text="@string/caught_hint"
+        android:id="@+id/characterCaught"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/characterCurrentHP"
+        android:layout_alignRight="@+id/characterCurrentHP"
+        android:layout_alignEnd="@+id/characterCurrentHP" />
+
+    <ImageButton
+        android:id="@+id/pokemon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/pokemon3"
+        android:layout_alignStart="@+id/pokemon3" />
+
+    <ImageButton
+        android:id="@+id/pokemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pokemon3"
+        android:layout_alignLeft="@+id/pokemon4"
+        android:layout_alignStart="@+id/pokemon4"
+        android:layout_marginBottom="27dp" />
+
+    <ImageButton
+        android:id="@+id/pokemon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pokemon4"
+        android:layout_alignLeft="@+id/pokemon5"
+        android:layout_alignStart="@+id/pokemon5"
+        android:layout_marginBottom="26dp" />
+
+    <ImageButton
+        android:id="@+id/pokemon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/pokemon5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/pokemon5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/pokemon6"
+        android:layout_toLeftOf="@+id/characterMoney"
+        android:layout_toStartOf="@+id/characterMoney" />
+
+    <ImageButton
+        android:id="@+id/pokemon6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/characterMoney"
+        android:layout_alignEnd="@+id/characterMoney" />
+
+    <Button
+        android:text = "@string/button_class_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToClassMenu"
+        android:layout_alignBottom="@+id/pokemon1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

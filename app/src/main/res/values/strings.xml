@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Adventurer Log</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_load">Load Sheet</string>
+
+    <string name="button_newsheet">New Adventure</string>
+    <string name="button_loadsheet">Continue Adventure</string>
+    <string name="button_send">Send</string>
+    <string name="button_class_select">Select Class</string>
+
+    <string name="title_activity_create_character">Create Character</string>
+    <string name="title_activity_load_character">Load Character</string>
+    <string name="title_activity_pick_stats">Select Stats</string>
+    <string name="title_activity_select_feats">Select Feats</string>
+    <string name="title_activity_main_sheet">Main</string>
+
+    <string name="games_prompt">Game Select</string>
+    <string name="class_prompt">Character Class</string>
+
+    <string name="name_hint">Character Name</string>
+    <string name="height_hint">Character Height</string>
+    <string name="weight_hint">Character Weight</string>
+    <string name="str_hint">Strength</string>
+    <string name="dex_hint">Dexterity</string>
+    <string name="con_hint">Constitution</string>
+    <string name="int_hint">Intelligence</string>
+    <string name="wis_hint">Wisdom</string>
+    <string name="cha_hint">Charisma</string>
+    <string name="currenthp_hint">Current HP</string>
+    <string name="maxhp_hint">Max HP</string>
+    <string name="money_hint">Current Pokedollars</string>
+    <string name="seen_hint">Pokedex Seen</string>
+    <string name="caught_hint">Pokedex Caught</string>
+
+
+    <string name="level_prompt">Character Level</string>
+    <string name="sex_prompt">Character Gender</string>
+    <string name="age_prompt">Character Age</string>
+
+
+
+
+    <string-array name="games_array">
+        <item>Pokemon</item>
+        <item>DnD 5E</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="base_trainer_classes_array">
+        <item>Ace Trainer</item>
+        <item>Breeder</item>
+        <item>Capture Specialist</item>
+        <item>Coordinator</item>
+        <item>Martial Artist</item>
+        <item>Mystic</item>
+        <item>Psychic</item>
+        <item>Ranger</item>
+        <item>Researcher</item>
+    </string-array>
+    <string name="title_activity_trainer_class_menu">Trainer Class Menu</string>
+
+
+</resources>
